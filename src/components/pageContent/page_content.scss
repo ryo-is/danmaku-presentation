@@ -1,0 +1,12 @@
+@import "../../common/style/config";
+
+.page-contents {
+  align-items: center;
+  display: flex;
+  font-size: 5.5rem;
+  height: calc(84vh - 10px);
+  line-height: 16vh;
+  margin: 0 auto;
+  justify-content: center;
+  width: 92vw;
+}

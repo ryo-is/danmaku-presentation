@@ -1,0 +1,5 @@
+.main-contents
+  PageTitle(:title-text="pageTitleText")
+  .unique-page(v-if="pageName==='fuga'")
+    include ./views/fuga
+  PageContent(:content-text="pageContentText" v-else)
