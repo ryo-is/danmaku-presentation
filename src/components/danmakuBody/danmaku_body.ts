@@ -6,7 +6,7 @@ export default class DanmakuBodyComponent extends Vue {
 
   public textMoveClass: boolean = false
 
-  public created() {
+  public mounted() {
     setTimeout(() => {
       this.textMoveClass = true
     }, 1000)
