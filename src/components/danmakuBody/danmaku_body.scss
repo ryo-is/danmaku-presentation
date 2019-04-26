@@ -1,13 +1,12 @@
 .danmaku-text {
-  -webkit-transition: all 5s linear;
-  -moz-transition: all 5s linear;
-  -o-transition: all 5s linear;
-  -ms-transition: all 5s linear;
-  font-size: 2.5rem;
+  -webkit-transition: all 8s linear;
+  -moz-transition: all 8s linear;
+  -o-transition: all 8s linear;
+  -ms-transition: all 8s linear;
+  font-size: 3rem;
   position: absolute;
-  transition: all 5s linear;
+  transition: all 8s linear;
   right: -50%;
-  top: 20vh;
 
   &.move {
     right: 100%;
