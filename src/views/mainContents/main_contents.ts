@@ -34,7 +34,13 @@ export default class MainContents extends Vue {
     hoge_1: {
       mainText: "hogehoge",
       mainTitle: "hogehoge",
-      prebLink: "/sectionTitle/why",
+      prebLink: "/sectionTitle/hoge",
+      nextLink: "/mainContents/fuga"
+    },
+    fuga: {
+      mainText: "hogehoge",
+      mainTitle: "hogehoge",
+      prebLink: "/mainContents/hoge",
       nextLink: "/sectionTitle/end"
     }
   }
