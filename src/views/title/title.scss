@@ -1,8 +1,10 @@
 .title {
-  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  height: 56.25vw;
+  justify-content: center;
 
   .title-area {
-    padding-top: 40vh;
 
     .main-title {
       font-size: 5.5rem;
@@ -15,12 +17,12 @@
     }
   }
 
-  .vue-logo {
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 15vh;
-    width: 200px;
-  }
+  // .vue-logo {
+  //   left: 0;
+  //   margin: auto;
+  //   position: absolute;
+  //   right: 0;
+  //   top: 15vh;
+  //   width: 200px;
+  // }
 }
