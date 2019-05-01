@@ -3,61 +3,70 @@
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  align-items: center;
   font-family: "Hiragino Maru Gothic ProN", Helvetica, Arial, sans-serif;
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
 
-  &.default-mode {
-    background-color: $base-back-color;
-    color: $base-font-color;
-  }
-
-  &.dark-mode {
-    background-color: $base-font-color;
-    color: $base-back-color;
-  }
-
-  .change-color-area {
-    bottom: 12px;
-    font-size: 32px;
-    opacity: .7;
-    position: absolute;
-    right: 12px;
-    z-index: 1001;
-  }
-
-  .transition-page-area {
-    height: 100vh;
-    position: absolute;
+  .app-wrapper {
+    height: 56.25vw;
+    position: relative;
     width: 100vw;
-    z-index: 1000;
 
-    .preb-page,
-    .next-page {
-      height: 100vh;
+    &.default-mode {
+      background-color: $base-back-color;
+      color: $base-font-color;
     }
 
-    .preb-arrow,
-    .next-arrow {
-      bottom: 0;
-      height: 56px;
-      margin: auto;
-      opacity: .2;
+    &.dark-mode {
+      background-color: $base-font-color;
+      color: $base-back-color;
+    }
+
+    .change-color-area {
+      bottom: 12px;
+      font-size: 32px;
+      opacity: .7;
       position: absolute;
-      top: 0;
+      right: 12px;
+      z-index: 1001;
+    }
 
-      img {
-        height: 100%;
-        width: auto;
+    .transition-page-area {
+      height: 56.25vw;
+      position: absolute;
+      width: 100vw;
+      z-index: 1000;
+
+      .preb-page,
+      .next-page {
+        height: 56.25vw;
       }
-    }
 
-    .preb-arrow {
-      left: 20px;
-    }
+      .preb-arrow,
+      .next-arrow {
+        bottom: 0;
+        height: 56px;
+        margin: auto;
+        opacity: .2;
+        position: absolute;
+        top: 0;
 
-    .next-arrow {
-      right: 20px;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .preb-arrow {
+        left: 20px;
+      }
+
+      .next-arrow {
+        right: 20px;
+      }
     }
   }
 }
