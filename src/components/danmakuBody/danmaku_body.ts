@@ -5,6 +5,11 @@ export default class DanmakuBodyComponent extends Vue {
   @Prop() public text: string
 
   public textMoveClass: boolean = false
+  public topPosition: string = ""
+
+  public created() {
+    this.topPosition = (Math.random() * 80 + 10) + "vh"
+  }
 
   public mounted() {
     setTimeout(() => {

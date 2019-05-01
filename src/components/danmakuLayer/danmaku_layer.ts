@@ -11,8 +11,12 @@ export default class DanmakuLayerComponent extends Vue {
   public danmakuTexts: string[] = ["弾幕だよー"]
 
   public created() {
+    const self: DanmakuLayerComponent = this
     setInterval(() => {
-      this.danmakuTexts.push("弾幕だよー弾幕だよー弾幕だよー")
+      self.danmakuTexts.push("弾幕だよー弾幕だよー弾幕だよー")
     }, 5000)
+    setInterval(() => {
+      self.danmakuTexts.shift()
+    }, 10000)
   }
 }
