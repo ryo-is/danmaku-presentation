@@ -33,19 +33,26 @@
 
     .text-area {
       margin-top: 20px;
+      position: relative;
+
+      .tag-mark {
+        bottom: 0;
+        color: $vue-light-color;
+        font-size: 1.8vw;
+        line-height: 4vw;
+        margin: auto;
+        padding-left: .5vw;
+        position: absolute;
+        top: 0;
+      }
 
       .tag {
         border-bottom: 5px solid $vue-light-color;
         font-size: 3vw;
         font-weight: bold;
+        line-height: 4vw;
+        padding-left: 3vw;
         width: 80%;
-
-        &::before {
-          content: "■";
-          color: $vue-light-color;
-          font-size: 3vw;
-          padding-right: .5rem;
-        }
       }
 
       .text {
