@@ -11,9 +11,9 @@ export default class DanmakuBodyComponent extends Vue {
     this.topPosition = (Math.random() * 80 + 10) + "vh"
   }
 
-  public mounted() {
-    setTimeout(() => {
-      this.textMoveClass = true
-    }, 1000)
-  }
+  // public mounted() {
+  //   setTimeout(() => {
+  //     this.textMoveClass = true
+  //   }, 1000)
+  // }
 }
