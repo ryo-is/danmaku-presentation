@@ -3,10 +3,13 @@
 .page-contents {
   align-items: center;
   display: flex;
-  font-size: 5.5rem;
-  height: calc(84vh - 10px);
-  line-height: 16vh;
+  height: calc(100% - 4.5vw);
   margin: 0 auto;
   justify-content: center;
   width: 92vw;
+
+  .text {
+    font-size: 5vw;
+    line-height: 16vh;
+  }
 }

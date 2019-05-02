@@ -3,7 +3,7 @@
 .introduction {
 
   .el-row {
-    height: calc(100% - 8vh);
+    height: calc(100% - 4.5vw);
   }
 
   .images-content {
@@ -36,15 +36,20 @@
 
       .tag {
         border-bottom: 5px solid $vue-light-color;
-        border-left: 15px solid $vue-light-color;
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: bold;
-        padding-left: 2rem;
         width: 80%;
+
+        &::before {
+          content: "■";
+          color: $vue-light-color;
+          font-size: 3vw;
+          padding-right: .5rem;
+        }
       }
 
       .text {
-        font-size: 3.5rem;
+        font-size: 3vw;
         padding-left: 4rem;
       }
     }
