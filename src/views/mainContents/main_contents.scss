@@ -1,6 +1,7 @@
 .main-contents {
   .unique-page {
-    font-size: 4.5rem;
+    font-size: 4.5vw;
+    height: calc(100% - 5vh - 4.5vw);
     margin: 5vh auto 0;
     width: 90vw;
 
