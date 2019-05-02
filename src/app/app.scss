@@ -9,9 +9,18 @@
   justify-content: center;
   height: 100vh;
   text-align: center;
+  width: 100vw;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #cecece;
+    border-radius: 3px;
+  }
 
   .app-wrapper {
-    height: 56.25vw;
     position: relative;
     width: 100vw;
 
@@ -35,15 +44,9 @@
     }
 
     .transition-page-area {
-      height: 56.25vw;
       position: absolute;
       width: 100vw;
       z-index: 1000;
-
-      .preb-page,
-      .next-page {
-        height: 56.25vw;
-      }
 
       .preb-arrow,
       .next-arrow {
